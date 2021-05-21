@@ -12,7 +12,7 @@ public class EmployeeController {
 
     private final EmployeeRepository repository;
 
-    EmployeeController(EmployeeRepository repository, Dual dual) {
+    EmployeeController(EmployeeRepository repository) {
         this.repository=repository;
     }
 
