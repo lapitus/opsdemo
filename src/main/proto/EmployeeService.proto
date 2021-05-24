@@ -1,0 +1,17 @@
+syntax = "proto3";
+package com.lapitus.grpc;
+
+message EmployeeRequest {
+    string employeeId = 1;
+    repeated string hobbies = 2;
+}
+
+message EmployeeResponse {
+    string employeeName  = 1;
+    string employeeRole = 2;
+    repeated string hobbies = 3;
+}
+
+service EmployeeService {
+    rpc getEmployee(EmployeeRequest) returns (EmployeeResponse);
+}
