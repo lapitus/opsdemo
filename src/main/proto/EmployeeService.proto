@@ -2,7 +2,7 @@ syntax = "proto3";
 package com.lapitus.grpc;
 
 message EmployeeRequest {
-    string employeeId = 1;
+    int64 employeeId = 1;
     repeated string hobbies = 2;
 }
 

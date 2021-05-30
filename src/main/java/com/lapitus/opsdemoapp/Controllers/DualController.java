@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DualController {
 
+
     private final JdbcTemplate jdbcTemplate;
     private static final String SQL = "SELECT sysdate FROM DUAL";
 
